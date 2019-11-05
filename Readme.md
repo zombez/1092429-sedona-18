@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Вододохов](https://up.htmlacademy.ru/adaptive/18/user/1092429).
-* Наставник: `(Евгений Баранков)`.
+* Наставник: `Евгений Баранков`.
 
 ---
 
