@@ -2,14 +2,13 @@
   background-color: $b-color;
 }
 
-.page-header__cross {
-  background-color: $w-color;
-}
-
-.main-nav__link {
-  font-size: 18px;
+.main-nav__list {
+  font-size: 28px;
   font-weight: 700;
   line-height: 2.22;
   text-align: center;
+}
+
+.main-nav__link {
   color: $w-color;
 }
