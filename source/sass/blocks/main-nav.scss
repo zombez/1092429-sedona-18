@@ -1,9 +1,9 @@
 .main-nav {
-  background-color: #81b3d2;
+  background-color: $b-color;
 }
 
 .page-header__cross {
-  background-color: #ffffff;
+  background-color: $w-color;
 }
 
 .main-nav__link {
@@ -11,5 +11,5 @@
   font-weight: 700;
   line-height: 2.22;
   text-align: center;
-  color: #ffffff;
+  color: $w-color;
 }
