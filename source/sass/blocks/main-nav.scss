@@ -1,14 +1,16 @@
 .main-nav {
-  background-color: $b-color;
+  background-color: #81b3d2;
 }
 
 .main-nav__list {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 2.22;
   text-align: center;
+  text-transform: uppercase;
+  list-style: none;
 }
 
 .main-nav__link {
-  color: $w-color;
+  color: #ffffff;
 }
