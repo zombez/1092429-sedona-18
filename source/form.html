@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">HTML academy</a>
+          </li>
+          </ul>
+        </div>
+        <button class="page-header__cross" type="button">крестик</button>
+      </nav>
+      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <img class="page-header__image" src="img/logotyle-mobile.svg"
+          width="102" height="83" alt="sedona">
+      </a>
+      <button class="page-header__toggle" type="button">открыть меню</button>
+      <img class="page-header__photo" src="img/back-mobile.jpg"
+        width="150" height="150" alt="вид седоны">
+    </header>
+    <section class="form">
+      <b class="form__slogan">оставте свой отзыв</b>
+      <p class="form__intro">Помогите нашим отелям стать лучше! оставьте отзыв
+          о них, а также о посещенных вами достопримечательностях</p>
+      <form class="basis-form" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="basis-form__yourself">
+          <h3 class="basis-form__title">Представьтесь:</h3>
+          <label class="basis-form__label">
+          <span class="basis-form__text">ИМЯ*:</span>
+          <input type="text" name="fullname" placeholder="Петр">
+          </label>
+
+          <label class="basis-form__label">
+          <span class="basis-form__text">ФАМИЛИЯ*:</span>
+          <input type="text" name="fullname" placeholder="Иванов">
+          </label>
+
+          <label class="basis-form__label">
+          <span class="basis-form__text">ОТЧЕСТВО:</span>
+          <input type="text" name="fullname" placeholder="Александрович">
+          </label>
+        </div>
+
+        <div class="basis-form__contacts">
+          <h3 class="basis-form__title">Контактная информация:</h3>
+          <label class="basis-form__label">
+          <span class="basis-form__text">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+          <input type="phone" name="phone" placeholder="Введите телефон">
+          </label>
+          <div></div>
+
+          <label class="basis-form__label">
+          <span class="basis-form__text">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
+          <input type="email" name="email" placeholder="Введите e-mail">
+          </label>
+          <div></div>
+        </div>
+
+        <div class="basis-form__mpression">
+          <h3 class="basis-form__title">Ваше общее впечатление:</h3>
+
+          <div class="basis-form__radio">
+          <input class="basis-form__input" type="radio" name="grid" id="radio-1" value="Скорее положительное" checked>
+          <label for="radio-1" class="basis-form__label">Скорее положительное</label>
+          </div>
+
+          <div class="basis-form__radio">
+          <input class="basis-form__input" type="radio" name="grid" id="radio-2" value="Скорее отрицательное">
+          <label for="radio-2" class="basis-form__label">Скорее отрицательное</label>
+          </div>
+
+          <div class="basis-form__radio">
+          <input class="basis-form__input" type="radio" name="grid" id="radio-3" value="Затрудняюсь ответить">
+          <label for="radio-3" class="basis-form__label">Затрудняюсь ответить</label>
+        </div>
+
+        <div class="basis-form__visited">
+          <h3 class="basis-form__title">посещенные достопримечательности:</h3>
+          <div class="basis-form__checkbox">
+          <input class="basis-form__input" type="checkbox" name="subscribe" id="checkbox-1" checked>
+          <label for="checkbox-1" class="basis-form__label">Мост Дьявола</label>
+          </div>
+
+          <div class="basis-form__checkbox">
+          <input class="basis-form__input" type="checkbox" name="subscribe" id="checkbox-2" checked>
+          <label for="checkbox-2" class="basis-form__label">Гора-Колокол</label>
+          </div>
+
+          <div class="basis-form__checkbox">
+          <input class="basis-form__input" type="checkbox" name="subscribe" id="checkbox-3" checked>
+          <label for="checkbox-3" class="basis-form__label">Слайд-парк</label>
+          </div>
+
+          <div class="basis-form__checkbox">
+          <input class="basis-form__input" type="checkbox" name="subscribe" id="checkbox-4">
+          <label for="checkbox-4" class="basis-form__label">Красные скалы</label>
+          </div>
+        </div>
+
+        <div class="basis-form__emotions">
+          <h3 class="basis-form__title">Опишите свои эмоции:</h3>
+          <label class="basis-form__label">
+          <textarea class="basis-form__textarea"  name="letter"
+          placeholder="Опишите подробно все свои восторги "></textarea>
+          </label>
+          <button class="basis-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        </div>
+      </form>
+
+      <div class="basis-form__popup1">
+        <h3 class="basis-form__title">что-то пошло!</h3>
+        <p class="basis-form__intro">Проверьте поля, выделенные красным,
+          скорее всего вы забыли их заполнить</p>
+        <button class="basis-form__button" type="button">ОК</button>
+      </div>
+
+      <div class="basis-form__popup2">
+        <h3 class="basis-form__title">ваш отзыв отправлен!</h3>
+        <p class="basis-form__intro">Спасибо за ваше участие, ваш отзыв
+          уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="basis-form__button" type="button">ЗАКРЫТЬ ОКНО</button>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <h3 class="page-footer__title">#VISITSEDONA</h3>
+      <div class="page-footer__wrapper">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">twitter</li>
+          <li class="page-footer__item">facebook</li>
+          <li class="page-footer__item">youtube</li>
+        </ul>
+      </div>
+      <p class="page-footer__intro">Разработанно</p>
+    </footer>
+  </body>
+</html>
