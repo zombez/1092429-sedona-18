@@ -1,16 +1,18 @@
-.interest__title {
+.interest {
+  &__title {
   font-size: 21px;
   font-weight: 700;
   line-height: 1.24;
   text-align: center;
   text-transform: uppercase;
-}
+  }
 
-.interest__intro {
-  line-height: 1.71;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
+  &__intro {
+    line-height: 1.71;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+  }
 }
 
 .interest__button {
