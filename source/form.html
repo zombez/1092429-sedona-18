@@ -11,16 +11,16 @@
         <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Главная</a>
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">фото и видео</a>
+            <a class="main-nav__link" href="photo.html">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="">HTML academy</a>
+            <a class="main-nav__link" href="">HTML academy</a>
           </li>
           </ul>
         </div>
@@ -31,44 +31,45 @@
           width="102" height="83" alt="sedona">
       </a>
       <button class="page-header__toggle" type="button">открыть меню</button>
-      <img class="page-header__photo" src="img/back-mobile.jpg"
-        width="150" height="150" alt="вид седоны">
+      <img class="page-header__photo" src="img/bg-back-mobile@1x.jpg"
+        width="321" height="389" alt="вид седоны">
     </header>
+
     <section class="form">
       <b class="form__slogan">оставте свой отзыв</b>
-      <p class="form__intro">Помогите нашим отелям стать лучше! оставьте отзыв
+      <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв
           о них, а также о посещенных вами достопримечательностях</p>
       <form class="basis-form" action="https://echo.htmlacademy.ru" method="post">
 
         <div class="basis-form__yourself">
           <h3 class="basis-form__title">Представьтесь:</h3>
           <label class="basis-form__label">
-          <span class="basis-form__text">ИМЯ*:</span>
-          <input type="text" name="fullname" placeholder="Петр">
+          <span class="basis-form__text">имя*:</span>
+          <input class="basis-form__input" type="text" name="fullname" placeholder="Петр">
           </label>
 
           <label class="basis-form__label">
-          <span class="basis-form__text">ФАМИЛИЯ*:</span>
-          <input type="text" name="fullname" placeholder="Иванов">
+          <span class="basis-form__text">фамилия*:</span>
+          <input class="basis-form__input" type="text" name="fullname" placeholder="Иванов">
           </label>
 
           <label class="basis-form__label">
-          <span class="basis-form__text">ОТЧЕСТВО:</span>
-          <input type="text" name="fullname" placeholder="Александрович">
+          <span class="basis-form__text">отчество:</span>
+          <input class="basis-form__input" type="text" name="fullname" placeholder="Александрович">
           </label>
         </div>
 
         <div class="basis-form__contacts">
           <h3 class="basis-form__title">Контактная информация:</h3>
           <label class="basis-form__label">
-          <span class="basis-form__text">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-          <input type="phone" name="phone" placeholder="Введите телефон">
+          <span class="basis-form__text">контактный телефон*:</span>
+          <input class="basis-form__input" type="phone" name="phone" placeholder="Введите телефон">
           </label>
           <div></div>
 
           <label class="basis-form__label">
-          <span class="basis-form__text">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
-          <input type="email" name="email" placeholder="Введите e-mail">
+          <span class="basis-form__text">электронная почта*:</span>
+          <input class="basis-form__input" type="email" name="email" placeholder="Введите e-mail">
           </label>
           <div></div>
         </div>
@@ -126,14 +127,14 @@
 
       <div class="basis-form__popup1">
         <h3 class="basis-form__title">что-то пошло!</h3>
-        <p class="basis-form__intro">Проверьте поля, выделенные красным,
+        <p class="basis-form__text">Проверьте поля, выделенные красным,
           скорее всего вы забыли их заполнить</p>
         <button class="basis-form__button" type="button">ОК</button>
       </div>
 
       <div class="basis-form__popup2">
         <h3 class="basis-form__title">ваш отзыв отправлен!</h3>
-        <p class="basis-form__intro">Спасибо за ваше участие, ваш отзыв
+        <p class="basis-form__text">Спасибо за ваше участие, ваш отзыв
           уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button class="basis-form__button" type="button">ЗАКРЫТЬ ОКНО</button>
       </div>

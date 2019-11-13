@@ -1,0 +1,16 @@
+.form {
+  &__slogan {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.44;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 1.71;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
