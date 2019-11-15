@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,16 +11,16 @@
         <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Главная</a>
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">фото и видео</a>
+            <a class="main-nav__link" href="photo.html">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="">HTML academy</a>
+            <a class="main-nav__link" href="">HTML academy</a>
           </li>
           </ul>
         </div>
@@ -30,8 +31,8 @@
           width="102" height="83" alt="sedona">
       </a>
       <button class="page-header__toggle" type="button">открыть меню</button>
-      <img class="page-header__photo" src="img/back-mobile.jpg"
-        width="150" height="150" alt="фото седоны">
+      <img class="page-header__photo" src="img/bg-back-mobile@1x.jpg"
+        width="320" height="389" alt="фото седоны">
     </header>
 
     <main class="page-main">
@@ -42,11 +43,13 @@
       </section>
 
       <section class="offers">
-        <b class="offers__slogan" >НАСТОЯЩИЙ ГОРОДОК</b>
-        <p class="offers__intro">— №1 —
-        СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-        <img class="offers__image" src="img/photo-city.png"
-        width="150" height="150" alt="вид города">
+        <div class="offers__first">
+        <b class="offers__slogan" >Настоящий городок</b>
+        <p class="offers__text">— №1 —
+        Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img class="offers__image" src="img/main-city-mobile@1x.jpg"
+        width="320" height="260" alt="вид города">
 
         <div class="offers__wrapper">
         <ul class="offers__list">
@@ -67,11 +70,13 @@
       </section>
 
       <section class="attractions">
-        <b class="attractions__slogan">ТАМ ЕСТЬ Мост дьявола</b>
-        <p class="attractions__intro">— №2 —
+        <div class="attractions__first">
+        <b class="attractions__slogan">Там есть мост дьявола</b>
+        <p class="attractions__text">— №2 —
           Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="attractions__image" src="img/photo-bridge.png"
-          width="150" height="150" alt="вид гор">
+        </div>
+          <img class="attractions__image" src="img/photo-bridge-mobile@1x.jpg"
+          width="320" height="260" alt="вид гор">
 
           <div class="attractions__wrapper">
             <ul class="attractions__list">
@@ -81,7 +86,7 @@
                   все интересные места находятся очень близко</p>
               </li>
               <li class="attractions__item">
-                <h3 class="attractions__stitle">Красивая дорого</h3>
+                <h3 class="attractions__title">Красивая дорого</h3>
                 <p class="attractions__intro">— №4 —
                   ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
@@ -93,7 +98,7 @@
             </ul>
           </div>
       </section>
-      <div class="interest__wrapper">
+      <div class="interest">
         <h3 class="interest__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p class="interest__intro">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
