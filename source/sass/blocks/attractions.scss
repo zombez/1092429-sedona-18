@@ -33,6 +33,7 @@
 }
 
 .attractions__list {
+  margin-top: -23px;
   list-style: none;
 }
 
@@ -53,6 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .attractions__elementary {
+    // max-height: 256px;
     display: flex;
   }
   .attractions__first {
@@ -64,6 +66,8 @@
     order: 1;
   }
   .attractions__list {
+    min-height: 256px;
+    margin-top: 0;
     display: flex;
     justify-content: space-around;
   }
