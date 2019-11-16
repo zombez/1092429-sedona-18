@@ -1,5 +1,10 @@
 .story {
+  padding-top: 43px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 33px;
   &__slogan {
+    display: flex;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.44;
@@ -11,5 +16,15 @@
     text-align: center;
     text-transform: uppercase;
     color: #333333;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story {
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .story {
   }
 }

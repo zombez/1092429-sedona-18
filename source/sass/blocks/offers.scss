@@ -1,6 +1,11 @@
 .offers__first {
-  text-align: center;
-  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 61px;
+  padding-right: 27px;
+  padding-bottom: 45px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -8,13 +13,19 @@
 .offers__slogan {
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   line-height: 1.44;
 }
 
 .offers__text {
+  text-align: center;
   text-transform: uppercase;
   line-height: 1.5;
+}
+
+.offers__image {
+  width: 100%;
 }
 
 .offers__list {
@@ -24,12 +35,36 @@
 .offers__title {
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   line-height: 1.44;
 }
 
 .offers__intro {
+  text-align: center;
   text-transform: uppercase;
   line-height: 1.5;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .offers__elementary {
+    display: flex;
+  }
+  .offers__first {
+    width: 256px;
+  }
+  .offers__image {
+    width: 100%;
+  }
+  .offers__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers__first {
+    width: 400px;
+  }
 }

@@ -1,4 +1,11 @@
 .attractions__first {
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-right: 31px;
+  padding-bottom: 42px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -15,6 +22,10 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
+}
+
+.attractions__image {
+  width: 100%;
 }
 
 .attractions__wrapper {
@@ -38,4 +49,28 @@
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__elementary {
+    display: flex;
+  }
+  .attractions__first {
+    width: 256px;
+    order: 2;
+  }
+  .attractions__image {
+    width: 100%;
+    order: 1;
+  }
+  .attractions__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__first {
+    width: 400px;
+  }
 }
