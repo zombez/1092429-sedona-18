@@ -1,4 +1,6 @@
 .form {
+  display: flex;
+  flex-direction: column;
   &__slogan {
     font-size: 18px;
     font-weight: 700;

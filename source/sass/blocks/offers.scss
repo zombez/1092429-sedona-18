@@ -1,10 +1,10 @@
 .offers__elementary {
   min-height: 440px;
-  background-image:url("../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 210px;
+  display: flex;
+  flex-direction: column;
 }
 .offers__first {
+  width: 100%;
   margin: 0 auto;
   padding-top: 61px;
   padding-right: 27px;
@@ -58,9 +58,7 @@
 @media (min-width: $tablet-width) {
   .offers__elementary {
     min-height: 440px;
-    background-image:url("../img/main-city-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 210px;
+    flex-direction: row;
   }
   .offers__first {
     width: 256px;
