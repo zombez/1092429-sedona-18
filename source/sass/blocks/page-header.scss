@@ -24,16 +24,16 @@
     background-image:url("../img/bg-back-tablet@1x.jpg");
 	  background-repeat: no-repeat;
     background-position: center 60px;
- }
- .page-header__logo {
+  }
+  .page-header__logo {
     position: absolute;
     top: 0;
     left: calc(50% - 51px);
- }
- .page-header__toggle,
- .page-header__cross {
+  }
+  .page-header__toggle,
+  .page-header__cross {
     display: none;
- }
+  }
 }
 
 @media (min-width: $desktop-width) {
