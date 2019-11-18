@@ -1,3 +1,8 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer__title {
   font-size: 21px;
   font-weight: 700;
@@ -6,6 +11,9 @@
 }
 
 .page-footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
 }
 
@@ -13,4 +21,11 @@
   line-height: 1.86;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
