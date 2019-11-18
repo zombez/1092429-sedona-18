@@ -56,14 +56,17 @@
   .attractions__elementary {
     display: flex;
   }
+
   .attractions__first {
     width: 256px;
     order: 2;
   }
+
   .attractions__image {
     width: 100%;
     order: 1;
   }
+
   .attractions__list {
     min-height: 256px;
     margin-top: 0;

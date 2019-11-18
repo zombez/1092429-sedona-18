@@ -4,6 +4,7 @@
   padding-right: 24px;
   padding-bottom: 33px;
   padding-left: 27px;
+
   &__title {
     font-size: 18px;
     font-weight: 700;
@@ -25,6 +26,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .photo__block {
   display: flex;
   flex-direction: column;
@@ -77,6 +79,7 @@
   .photo__block:nth-child(1) {
     min-width: 100%;
   }
+
   .photo__block:nth-child(2),
   .photo__block:nth-child(3),
   .photo__block:nth-child(4) {

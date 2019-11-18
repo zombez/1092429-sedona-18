@@ -3,6 +3,7 @@
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 33px;
+
   &__slogan {
     display: flex;
     font-size: 18px;
@@ -20,11 +21,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .story {
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .story {
-  }
 }

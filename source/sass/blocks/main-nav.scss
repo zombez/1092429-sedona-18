@@ -21,10 +21,12 @@
   .main-nav {
     background-color: $white;
   }
+
   .main-nav__list {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .main-nav__link {
     color: #000000;
   }
