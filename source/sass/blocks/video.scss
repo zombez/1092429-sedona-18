@@ -1,11 +1,5 @@
-.gallery {
-  margin: 0 auto;
-  padding-top: 44px;
-  padding-right: 24px;
-  padding-bottom: 33px;
-  padding-left: 27px;
-
-  &__title {
+.video {
+  &__slogan {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.44;
@@ -13,7 +7,7 @@
     text-transform: uppercase;
   }
 
-  &__text {
+  &__intro {
     line-height: 1.71;
     text-align: center;
     text-transform: uppercase;
