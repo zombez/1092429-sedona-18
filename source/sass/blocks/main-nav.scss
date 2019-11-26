@@ -46,10 +46,6 @@
   color: $white;
 }
 
-@media (max-width: $mobile-width-only) {
-
-}
-
 @media (min-width: $tablet-width) {
   .main-nav {
     flex-direction: row;
