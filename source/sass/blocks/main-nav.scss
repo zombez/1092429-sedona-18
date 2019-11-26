@@ -1,5 +1,36 @@
 .main-nav {
+  position: relative;
+  width: 320px;
+  min-height: 53px;
+  margin: 0 auto;
   background-color: $blue;
+}
+
+.main-nav__cross {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -2px;
+    width: 28px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
@@ -13,4 +44,21 @@
 
 .main-nav__link {
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $white;
+  }
+
+  .main-nav__list {
+    // flex-direction: row;
+    // justify-content: space-around;
+  }
+
+  .main-nav__link {
+    color: #000000;
+  }
 }

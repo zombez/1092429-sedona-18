@@ -1,19 +1,28 @@
 .interest {
-  &__title {
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 1.24;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__intro {
-    line-height: 1.71;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-  }
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
 }
+
+.interest__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.24;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.interest__intro {
+  line-height: 1.71;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
 
 .interest__button {
   width: 280px;
@@ -25,4 +34,10 @@
   text-transform: uppercase;
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .interest__button {
+    width: 458px;
+  }
 }

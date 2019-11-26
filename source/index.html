@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
+    <header class="page-header page-header--closed page-header--nojs">
+      <nav class="main-nav main-nav--opened">
         <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -24,15 +27,16 @@
           </li>
           </ul>
         </div>
-        <button class="page-header__cross" type="button">крестик</button>
+        <button class="main-nav__cross" type="button"></button>
       </nav>
-      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-header__logo" href="index.html">
       <img class="page-header__image" src="img/logotyle-mobile.svg"
           width="102" height="83" alt="sedona">
       </a>
-      <button class="page-header__toggle" type="button">открыть меню</button>
-      <img class="page-header__photo" src="img/bg-back-mobile@1x.jpg"
-        width="320" height="389" alt="фото седоны">
+      <button class="page-header__toggle" type="button">
+      <span class="visually-hidden">открыть меню</span></button>
+      <!-- <img class="page-header__photo" src="img/bg-back-mobile@1x.jpg"
+        width="320" height="389" alt="фото седоны"> -->
     </header>
 
     <main class="page-main">
@@ -43,13 +47,15 @@
       </section>
 
       <section class="offers">
-        <div class="offers__first">
-        <b class="offers__slogan" >Настоящий городок</b>
-        <p class="offers__text">— №1 —
-        Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="offers__elementary">
+          <div class="offers__first">
+            <b class="offers__slogan" >Настоящий городок</b>
+            <p class="offers__text">— №1 —
+            Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="offers__image" src="img/photo-city.png"
+          width="320" height="260" alt="вид города">
         </div>
-        <img class="offers__image" src="img/main-city-mobile@1x.jpg"
-        width="320" height="260" alt="вид города">
 
         <div class="offers__wrapper">
         <ul class="offers__list">
@@ -70,13 +76,15 @@
       </section>
 
       <section class="attractions">
-        <div class="attractions__first">
-        <b class="attractions__slogan">Там есть мост дьявола</b>
-        <p class="attractions__text">— №2 —
-          Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        </div>
+        <div class="attractions__elementary">
+          <div class="attractions__first">
+            <b class="attractions__slogan">Там есть мост дьявола</b>
+            <p class="attractions__text">— №2 —
+            Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
           <img class="attractions__image" src="img/photo-bridge-mobile@1x.jpg"
           width="320" height="260" alt="вид гор">
+        </div>
 
           <div class="attractions__wrapper">
             <ul class="attractions__list">

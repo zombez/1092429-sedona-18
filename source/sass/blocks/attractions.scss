@@ -1,4 +1,11 @@
 .attractions__first {
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-right: 31px;
+  padding-bottom: 42px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -17,11 +24,16 @@
   text-align: center;
 }
 
+.attractions__image {
+  width: 100%;
+}
+
 .attractions__wrapper {
   background-color: #dcdcdc;
 }
 
 .attractions__list {
+  margin-top: -23px;
   list-style: none;
 }
 
@@ -38,4 +50,33 @@
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__elementary {
+    display: flex;
+  }
+
+  .attractions__first {
+    width: 256px;
+    order: 2;
+  }
+
+  .attractions__image {
+    order: 1;
+  }
+
+  .attractions__list {
+    min-height: 256px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__first {
+    width: 400px;
+  }
 }

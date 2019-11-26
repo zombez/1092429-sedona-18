@@ -1,15 +1,21 @@
 .story {
-  &__slogan {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.44;
-    text-align: center;
-    text-transform: uppercase;
-  }
+  padding-top: 43px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+}
 
-  &__intro {
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-  }
+.story__slogan {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.story__intro {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }

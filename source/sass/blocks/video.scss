@@ -1,14 +1,4 @@
-.form {
-  margin: 0 auto;
-  padding-top: 41px;
-  padding-right: 21px;
-  padding-bottom: 22px;
-  padding-left: 23px;
-  display: flex;
-  flex-direction: column;
-}
-
-.form__slogan {
+.video__slogan {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.44;
@@ -16,7 +6,7 @@
   text-transform: uppercase;
 }
 
-.form__text {
+.video__intro {
   line-height: 1.71;
   text-align: center;
   text-transform: uppercase;
