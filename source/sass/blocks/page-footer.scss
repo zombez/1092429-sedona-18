@@ -42,17 +42,23 @@
   background-color: #5496bd;
 }
 
+.page-footer__development {
+  padding-bottom: 23px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-footer__intro {
+  padding-right: 8px;
   line-height: 1.86;
   text-align: center;
   text-transform: uppercase;
 }
 
-.page-footer__logo {
+.page-footer__icon {
   width: 40px;
-  margin-top: -45px;
-  margin-left: 225px;
-  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
