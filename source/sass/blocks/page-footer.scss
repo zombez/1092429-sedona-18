@@ -33,6 +33,15 @@
   background-color: #81b3d2;
 }
 
+.page-footer__link:hover,
+.page-footer__link:focus {
+  background-color: #669ec0;
+}
+
+.page-footer__link:active {
+  background-color: #5496bd;
+}
+
 .page-footer__intro {
   line-height: 1.86;
   text-align: center;
