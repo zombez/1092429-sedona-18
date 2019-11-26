@@ -1,8 +1,8 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  width: auto;
   min-height: 53px;
-  margin: 0 auto;
+  // margin: 0 auto;
   background-color: $blue;
 }
 
@@ -54,6 +54,7 @@
   .main-nav {
     flex-direction: row;
     justify-content: space-around;
+    flex-grow: 1;
     background-color: $white;
   }
 
