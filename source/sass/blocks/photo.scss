@@ -10,19 +10,18 @@
   background-color: #f2f2f2;
 }
 
-.photo {
-  &__slogan {
-    font-weight: 700;
-    line-height: 1.71;
-    text-transform: uppercase;
-    text-align: left;
-  }
-
-  &__intro {
-    text-align: left;
-    color: #333333;
-  }
+.photo__slogan {
+  font-weight: 700;
+  line-height: 1.71;
+  text-transform: uppercase;
+  text-align: left;
 }
+
+.photo__intro {
+  text-align: left;
+  color: #333333;
+}
+
 
 .photo__span {
   font-weight: 700;

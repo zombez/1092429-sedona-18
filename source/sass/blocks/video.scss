@@ -1,16 +1,14 @@
-.video {
-  &__slogan {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.44;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.video__slogan {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  &__intro {
-    line-height: 1.71;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-  }
+.video__intro {
+  line-height: 1.71;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }
