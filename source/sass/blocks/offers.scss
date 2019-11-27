@@ -36,6 +36,13 @@
   flex-grow: 1;
 }
 
+.offers__wrapper {
+  padding-top: 41px;
+  padding-right: 41px;
+  padding-bottom: 42px;
+  padding-left: 69px;
+}
+
 .offers__list {
   min-height: 256px;
   list-style: none;
@@ -44,13 +51,13 @@
 .offers__title {
   font-size: 18px;
   font-weight: 700;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   line-height: 1.44;
 }
 
 .offers__intro {
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   line-height: 1.5;
   color: #333333;

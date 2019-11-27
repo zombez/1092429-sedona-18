@@ -1,21 +1,41 @@
 .story {
+  display: block;
   padding-top: 43px;
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 33px;
+  text-align: center;
 }
 
 .story__slogan {
-  display: flex;
+  // display: flex;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.44;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
 }
 
 .story__intro {
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .story {
+    padding-top: 51px;
+    padding-right: 139px;
+    padding-bottom: 55px;
+    padding-left: 139px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .story {
+    padding-top: 51px;
+    padding-right: 355px;
+    padding-bottom: 55px;
+    padding-left: 355px;
+  }
 }
