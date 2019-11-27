@@ -37,6 +37,16 @@
   list-style: none;
 }
 
+.attractions__item {
+  padding-top: 31px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #000000;
+}
+
+.attractions__item:nth-child(3) {
+  border: none;
+}
+
 .attractions__title {
   font-size: 18px;
   font-weight: 700;
@@ -72,6 +82,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .attractions__item {
+    border: none;
   }
 }
 
