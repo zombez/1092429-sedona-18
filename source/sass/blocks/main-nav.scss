@@ -40,7 +40,7 @@
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
 
-.main-nav--opened  {
+.main-nav--opened {
   top: 0;
   right: auto;
   left: 0;
@@ -107,7 +107,6 @@
 // }
 
 @media (max-width: $mobile-width-only) {
-
   .main-nav--closed .main-nav__item {
     display: none;
   }
