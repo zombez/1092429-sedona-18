@@ -6,8 +6,8 @@
   background-color: $blue;
 }
 
-.main-nav__cross {
-  display: block;
+.main-nav__cross  {
+  // display: block;
   position: absolute;
   top: 20px;
   right: 16px;
@@ -105,6 +105,13 @@
 //   padding-right: 21px;
 //   padding-left: 21px;
 //   text-align: center;
+// }
+
+// @media (max-width: $mobile-width-only) {
+
+//   .main-nav--closed .main-nav__item {
+//     display: none;
+//   }
 // }
 
 @media (min-width: $tablet-width) {
