@@ -36,19 +36,42 @@
   flex-grow: 1;
 }
 
-.offers__wrapper {
-  padding-top: 41px;
-  padding-right: 41px;
-  padding-bottom: 42px;
-  padding-left: 69px;
-}
+// .offers__wrapper {
+//   padding-top: 41px;
+//   padding-right: 41px;
+//   padding-bottom: 42px;
+//   padding-left: 69px;
+// }
 
 .offers__list {
   min-height: 256px;
   list-style: none;
 }
 
+.offers__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__housing {
+  width: 37px;
+  height: 36px;
+  margin-top: 26px;
+}
+
+.offers__souvenirs {
+  width: 32px;
+  height: 38px;
+}
+
+.offers__Food {
+  width: 40px;
+  height: 35px;
+}
+
 .offers__title {
+  margin-top: -25px;
+  padding-left: 50px;
   font-size: 18px;
   font-weight: 700;
   // text-align: center;
@@ -57,6 +80,8 @@
 }
 
 .offers__intro {
+  margin-top: -15px;
+  padding-left: 50px;
   // text-align: center;
   text-transform: uppercase;
   line-height: 1.5;
@@ -77,6 +102,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .offers__item {
+
   }
 }
 
