@@ -1,11 +1,11 @@
 .page-header {
   position: relative;
-  min-height: 440px;
+  // min-height: 440px;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 60px;
+  // background-image: url("../img/bg-back-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center 60px;
   // background-size: cover;
 }
 
@@ -48,9 +48,9 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 60px;
+    // background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center 60px;
   }
 
   .page-header__logo {
@@ -63,9 +63,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 60px;
+    // background-image: url("../img/bg-back-desktop@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center 60px;
   }
 
   .page-header__logo {
