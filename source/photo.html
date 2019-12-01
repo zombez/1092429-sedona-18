@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened  main-nav--nojs">
         <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -27,15 +27,14 @@
           </li>
           </ul>
         </div>
-        <button class="page-header__cross" type="button">крестик</button>
+        <!-- <button class="main-nav__cross" type="button"></button> -->
+        <button class="main-nav__toggle" type="button">
       </nav>
       <a class="page-header__logo" href="index.html">
       <img class="page-header__image" src="img/logotyle-mobile.svg"
           width="102" height="83" alt="sedona">
       </a>
-      <button class="page-header__toggle" type="button">открыть меню</button>
-      <!-- <img class="page-header__photo" src="img/bg-back-mobile@1x.jpg"
-        width="321" height="389" alt="вид седоны"> -->
+      <span class="visually-hidden">открыть меню</span></button>
     </header>
 
     <main class="photo-main">
