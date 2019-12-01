@@ -1,12 +1,27 @@
 .promo {
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: -20px;
 }
 
 .promo__photo {
-  width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 389px;
 }
 
 .promo__icon {
-  margin-top: -160px;
+  display: block;
+  margin-top: -115%;
+}
+
+.promo__lower {
+  width: 100%;
+  margin-top: -27px;
+}
+
+.promo__svg {
+  width: 100%;
+  // margin: 0 auto;
 }
