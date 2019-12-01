@@ -17,13 +17,14 @@
 }
 
 .promo__lower {
-  width: 100%;
-  margin-top: -31px;
+  min-width: 100%;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
 }
 
 .promo__svg {
   width: 100%;
-  // margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,14 +35,12 @@
   }
 
   .promo__lower {
-    width: 100%;
-    margin-top: -62px;
+    margin-top: -60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__lower {
-    width: 100%;
-    margin-top: -65px;
+    margin-top: -61px;
   }
 }
