@@ -5,6 +5,19 @@
   margin-top: -20px;
 }
 
+.promo::after {
+  content: "";
+  width: 320px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  bottom: 232px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+
 .promo__photo {
   width: 100%;
   margin: 0 auto;
@@ -16,31 +29,43 @@
   margin-top: -115%;
 }
 
-.promo__lower {
-  min-width: 100%;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-}
+// .promo__lower {
+//   min-width: 100%;
+//   margin-top: -30px;
+//   display: flex;
+//   justify-content: center;
+// }
 
-.promo__svg {
-  width: 100%;
-}
+// .promo__svg {
+//   width: 100%;
+// }
 
 @media (min-width: $tablet-width) {
+  .promo::after {
+    content: "";
+    width: 768px;
+    height: 57px;
+    display: block;
+    position: absolute;
+    bottom: 232px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
   .promo__icon {
     width: 460px;
     height: 350px;
     margin-top: -90%;
   }
 
-  .promo__lower {
-    margin-top: -60px;
-  }
+  // .promo__lower {
+  //   margin-top: -60px;
+  // }
 }
 
 @media (min-width: $desktop-width) {
-  .promo__lower {
-    margin-top: -61px;
-  }
+  // .promo__lower {
+  //   margin-top: -61px;
+  // }
 }
