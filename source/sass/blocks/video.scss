@@ -1,3 +1,12 @@
+.video{
+  padding-top: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
 .video__slogan {
   font-size: 18px;
   font-weight: 700;
@@ -7,8 +16,73 @@
 }
 
 .video__intro {
+  padding-bottom: 40px;
   line-height: 1.71;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+
+.video__slider {
+  width: 280px;
+  height: 45px;
+  opacity: 0.6;
+  position: absolute;
+  display: block;
+  top: 338px;
+  background-color: black;
+}
+
+.video__strip {
+  width: 235px;
+  height: 3px;
+  // opacity: 0.2;
+  margin-top: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid #ffffff;
+}
+
+.slider__button {
+  width: 11px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: $white;
+}
+
+.video__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -3px;
+  width: 280px;
+  height: 66px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.video__menu::before {
+  content: "";
+  width: 16px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: 22px;
+  background-image: url("../img/icon-video-replay.svg");
+  // background-image: url("../img/icon-video-subtitles.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .video__image {
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__image {
+    width: 800px;
+    height: 500px;
+  }
 }

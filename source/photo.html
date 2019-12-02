@@ -87,12 +87,16 @@
           </div>
         </div>
 
-        <div class="video__wrapper">
+        <div class="video">
           <b class="video__slogan">все еще сомневаетесь?</b>
           <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами,
             пока они не подорожали в очередной раз!</p>
-          <img class="video__image" src="img/video-mobile.jpg"
-          width="150" height="150" alt="видеопрезентация">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img class="video__image" src="img/video-mobile@1x.jpg"
+            width="321" height="201" alt="видеопрезентация">
+          </picture>
 
           <div class="video__slider">
             <button class="slider__button" type="button" title="ползунок"></button>
