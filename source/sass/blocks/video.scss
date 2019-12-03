@@ -69,7 +69,7 @@
   display: block;
   position: absolute;
   left: 22px;
-  background-image: url("../img/icon-video-replay1.svg");
+  background-image: url("../img/icon-video-replay.svg");
   background-repeat: no-repeat;
 }
 
@@ -112,6 +112,10 @@
   .video__menu::before {
     background-image: url("../img/icon-video-replay1.svg");
   }
+
+  .video__menu--subtitles::after{
+    background-image: url("../img/icon-video-subtitles1.svg");
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -129,6 +133,6 @@
   }
 
   .video__menu {
-    width: 730px;
+    width: 790px;
   }
 }
