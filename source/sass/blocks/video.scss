@@ -44,8 +44,8 @@
 }
 
 .slider__button {
-  width: 11px;
-  height: 10px;
+  width: 5px;
+  height: 15px;
   border-radius: 50%;
   border: none;
   background-color: $white;
@@ -85,6 +85,19 @@
   background-position: 0 0;
 }
 
+.video__menu--fullscreen::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  background-image: url("../img/icon-video-fullscreen.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 @media (min-width: $tablet-width) {
   .video__image {
     width: 648px;
@@ -115,6 +128,10 @@
 
   .video__menu--subtitles::after{
     background-image: url("../img/icon-video-subtitles1.svg");
+  }
+
+  .video__menu--fullscreen::after {
+    background-image: url("../img/icon-video-fullscreen1.svg");
   }
 }
 
