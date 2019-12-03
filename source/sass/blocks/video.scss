@@ -110,26 +110,19 @@
     padding-top: 25px;
   }
 
-  // .video__slider::before {
-  //   content: "";
-  //   width: 16px;
-  //   height: 20px;
-  //   display: block;
-  //   position: absolute;
-  //   left: 22px;
-  //   background-image: url("../img/icon-video-replay.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: 0 0;
-  //   color: #ffffff;
-  // }
-
   .video__strip {
     width: 389px;
     height: 3px;
   }
 
   .video__menu {
-    display: none;
+    width: 650px;
+    margin-top:-83px;
+    background-color: inherit;
+  }
+
+  .video__menu::before {
+    fill: #ffffff;
   }
 }
 
