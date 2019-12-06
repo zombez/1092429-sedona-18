@@ -131,8 +131,14 @@
             <p class="attractions__text">— №2 —
             Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="attractions__image" src="img/photo-bridge-mobile@1x.jpg"
-          width="320" height="260" alt="вид гор">
+          <div class="attractions__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+              <img class="attractions__image" src="img/photo-bridge-mobile@1x.jpg"
+              width="320" height="260" alt="вид гор">
+            </picture>
+          </div>
         </div>
 
           <div class="attractions__wrapper">
