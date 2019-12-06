@@ -38,17 +38,17 @@
     display: block;
   }
 
- .main-nav__open {
-   display: block;
-   top: auto;
-   bottom: -40px;
- }
+  .main-nav__open {
+    display: block;
+    top: auto;
+    bottom: -40px;
+  }
 
  .main-nav__close {
-   display: block;
-   top: 20px;
-   bottom: auto;
- }
+    display: block;
+    top: 20px;
+    bottom: auto;
+  }
 }
 
 .main-nav__list {
