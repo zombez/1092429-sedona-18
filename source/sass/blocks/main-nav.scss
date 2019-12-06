@@ -9,6 +9,7 @@
   position: absolute;
   top: 20px;
   right: 18px;
+  // visibility: hidden;
 
   &:hover,
   &:active {
@@ -16,10 +17,26 @@
   }
 }
 
+.main-nav__open::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  left: 320px;
+  bottom: -40px;
+  background-image: url("..img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .main-nav__close {
   position: absolute;
   bottom: -40px;
   right: 18px;
+  // visibility: hidden;
 
   &:hover,
   &:active {
