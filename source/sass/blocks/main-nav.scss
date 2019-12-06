@@ -1,22 +1,14 @@
 .main-nav {
   position: relative;
   width: 100%;
-  min-height: 53px;
   margin: 0 auto;
   background-color: $blue;
 }
 
-.main-nav__toggle {
+.main-nav__open {
   position: absolute;
   top: 20px;
   right: 18px;
-  z-index: 2;
-  display: block;
-  width: 23px;
-  height: 21px;
-  cursor: pointer;
-  border: none;
-  background-color: $white;
 
   &:hover,
   &:active {
@@ -24,46 +16,39 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
+.main-nav__close {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 23px;
-  height: 4px;
-  background-color: $blue;
-  box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
+  bottom: -40px;
+  right: 18px;
+
+  &:hover,
+  &:active {
+    background-color: green;
+  }
 }
 
-.main-nav--closed .page-main-nav__toggle:active::before {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+.main-nav__list,
+.main-nav__close {
+  display: none;
 }
 
-.main-nav--opened {
-  top: 0;
-  right: auto;
-  left: 0;
-  // border: none;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 29px;
-    right: 16px;
-    width: 28px;
-    height: 4px;
-    background-color: #000000;
+.main-nav--opened,
+.main-nav--nojs {
+  .main-nav__list {
+    display: block;
   }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+ .main-nav__open {
+   display: block;
+   top: auto;
+   bottom: -40px;
+ }
 
-  &::after {
-    transform: rotate(-45deg);
-  }
+ .main-nav__close {
+   display: block;
+   top: 20px;
+   bottom: auto;
+ }
 }
 
 .main-nav__list {
@@ -87,25 +72,6 @@
   color: $white;
 }
 
-// .main-nav--nojs {
-//   display: none;
-// }
-
-// .main-nav--nojs .main-nav__wrapper {
-//   position: static;
-//   min-height: 0;
-// }
-
-// .main-nav--nojs .main-nav__list {
-//   display: block;
-// }
-
-// .main-nav--nojs .main-nav__list a {
-//   padding-right: 21px;
-//   padding-left: 21px;
-//   text-align: center;
-// }
-
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
@@ -117,8 +83,15 @@
     background-color: $white;
   }
 
-  .main-nav__toggle {
-    display: none;
+  .main-nav--opened{
+    .main-nav__list {
+      display: flex;
+    }
+
+    .main-nav__open,
+    .main-nav__close {
+      display: none;
+    }
   }
 
   .main-nav__list {
