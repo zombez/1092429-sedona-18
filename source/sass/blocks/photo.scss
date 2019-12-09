@@ -116,18 +116,11 @@
   .photo__text {
     margin-top: -85px;
     background-color: #000000;
+    color: #ffffff;
     opacity: 0.3;
   }
 
-  .photo__slogan {
-    color: #ffffff;
-  }
-
-  .photo__intro {
-    color: #ffffff;
-  }
-
-  .photo__span {
-    color: #ffffff;
+  .photo__span::before {
+    background-image: url("../img/icon-like1.svg");
   }
 }
