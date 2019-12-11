@@ -134,6 +134,10 @@
     justify-content: space-around;
   }
 
+  .main-nav__item:nth-child(3) {
+    margin-left: 100px;
+  }
+
   .main-nav__list .main-nav__item {
     border: none;
   }
