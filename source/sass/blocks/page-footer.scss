@@ -1,6 +1,8 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .page-footer__title {
@@ -66,7 +68,7 @@
     padding-top: 36px;
     padding-bottom: 36px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .page-footer__development {
