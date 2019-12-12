@@ -1,4 +1,5 @@
 .attractions__first {
+  width: 100%;
   margin: 0 auto;
   padding-top: 45px;
   padding-right: 31px;
@@ -24,13 +25,14 @@
   text-align: center;
 }
 
-// .attractions__photo {
-//   height: 260px;
-// }
-
-.attractions__image {
-  width: 100%;
+.attractions__photo {
+  height: 260px;
+  background-image: url("../img/photo-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
+
 
 .attractions__wrapper {
   background-color: #dcdcdc;
@@ -76,7 +78,13 @@
     order: 2;
   }
 
-  .attractions__image {
+  .attractions__photo {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/photo-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    flex-grow: 1;
     order: 1;
   }
 
@@ -96,5 +104,12 @@
 @media (min-width: $desktop-width) {
   .attractions__first {
     width: 400px;
+  }
+
+  .attractions__photo {
+    width: 800px;
+    background-image: url("../img/photo-bridge-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }

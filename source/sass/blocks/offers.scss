@@ -33,13 +33,11 @@
 }
 
 .offers__photo {
-  width: 320px;
   height: 260px;
-  margin: 0 auto;
-  // display: block;
   background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0 0;
+  background-size: cover;
 }
 
 .offers__wrapper {

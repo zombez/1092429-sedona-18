@@ -120,7 +120,12 @@
     // opacity: 0.3;
   }
 
+  .photo__intro {
+    color: #ffffff;
+  }
+
   .photo__span::before {
     background-image: url("../img/icon-like1.svg");
+    opacity: 1;
   }
 }
