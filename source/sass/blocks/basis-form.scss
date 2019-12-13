@@ -1,3 +1,30 @@
+.basis-form__yourself {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #000000;
+}
+.basis-form__contacts {
+  padding-bottom: 25px;
+  border-top: 1px solid #000000;
+}
+
+.basis-form__mpression {
+  padding-bottom: 25px;
+  border-top: 1px solid #000000;
+}
+
+.basis-form__visited {
+  padding-bottom: 25px;
+  border-top: 1px solid #000000;
+}
+
+.basis-form__emotions {
+  padding-bottom: 25px;
+  border-top: 1px solid #000000;
+
+}
+
 .basis-form__title {
   font-size: 18px;
   font-weight: 700;
@@ -13,6 +40,18 @@
   text-align: left;
   text-transform: uppercase;
   color: #333333;
+}
+
+.basis-form__input {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 192px;
+  height: 58px;
+  border: 0;
+}
+
+.basis-form__input:nth-child(1) {
+  width: 230px;
 }
 
 .basis-form__input::placeholder {
