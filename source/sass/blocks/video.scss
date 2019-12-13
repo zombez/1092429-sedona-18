@@ -26,11 +26,10 @@
 .video__slider {
   width: 280px;
   height: 45px;
-  opacity: 0.6;
   position: absolute;
   display: block;
   top: 338px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video__strip {
@@ -43,15 +42,15 @@
 }
 
 .slider__button {
-  width: 5px;
-  height: 15px;
+  width: 11px;
+  height: 10px;
   display: block;
   position: absolute;
   top: 16px;
   left: 45px;
   z-index: 10;
   border-radius: 50%;
-  border: none;
+  border: 0;
   background-color: $white;
 }
 
