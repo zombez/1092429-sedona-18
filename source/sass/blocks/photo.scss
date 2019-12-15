@@ -40,8 +40,11 @@
 }
 
 .photo__span {
+  width: 100px;
   padding-left: 35px;
   padding-bottom: 10px;
+  position: relative;
+  display: block;
   font-weight: 700;
   line-height: 1.71;
   text-align: left;
@@ -52,7 +55,7 @@
   width: 23px;
   height: 21px;
   position: absolute;
-  left: 2px;
+  right: 70px;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -83,14 +86,19 @@
   }
 
   .photo__span {
+    width: 100%;
     margin-top: -46px;
-    margin-right: 10px;
+    margin-left: -10px;
     text-align: end;
   }
 
-  // .photo__span::before {
-  //   margin-left: 650px;
-  // }
+  .photo__span::before {
+    right: 30px;
+  }
+
+  .photo__span--first::before {
+    right: 40px;
+  }
 
   .photo__block:nth-child(1) {
     width: 100%;
