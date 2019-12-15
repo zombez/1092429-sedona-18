@@ -1,10 +1,12 @@
 .basis-form__yourself {
+  height: 340px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #000000;
 }
 .basis-form__contacts {
+  height: 286px;
   padding-bottom: 25px;
   border-top: 1px solid #000000;
 }
@@ -15,11 +17,16 @@
 }
 
 .basis-form__visited {
+  height: 408px;
   padding-bottom: 25px;
   border-top: 1px solid #000000;
 }
 
 .basis-form__emotions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 377px;
   padding-bottom: 25px;
   border-top: 1px solid #000000;
 
@@ -51,7 +58,7 @@
 }
 
 .basis-form__input:nth-child(1) {
-  width: 230px;
+
 }
 
 .basis-form__input::placeholder {
@@ -65,10 +72,21 @@
 }
 
 .basis-form__label {
+  width: 100%;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.44;
   text-align: left;
+}
+
+.basis-form__textarea {
+  width: 100%;
+  height: 160px;
+  padding-top: 22px;
+  padding-right: 33px;
+  padding-left: 21px;
+  background-color: #f2f2f2;
+  border: 0;
 }
 
 .basis-form__textarea::placeholder {
@@ -76,7 +94,6 @@
   font-weight: 700;
   line-height: 1.44;
   text-align: left;
-  background-color: #f2f2f2;
   color: #000000;
   opacity: 1;
 }
@@ -84,6 +101,7 @@
 .basis-form__button {
   width: 280px;
   height: 58px;
+  margin-top: 51px;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.24;
