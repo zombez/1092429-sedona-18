@@ -152,9 +152,9 @@
 }
 
 .basis-form__radio {
-  padding-top: 52px;
-  padding-left: 25px;
-  position: relative;
+  // padding-top: 52px;
+  // padding-left: 25px;
+  // position: relative;
 }
 
 .impression__input {
@@ -200,9 +200,9 @@
 }
 
 .basis-form__checkbox {
-  padding-top: 52px;
-  padding-left: 25px;
-  position: relative;
+  // padding-top: 52px;
+  // padding-left: 25px;
+  // position: relative;
 }
 
 .visited__input {
@@ -244,4 +244,38 @@
   text-transform: uppercase;
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .basis-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .basis-form__impression {
+    padding-bottom: 20px;
+    order: 1;
+    border: none;
+  }
+
+  .basis-form__yourself {
+    order: 2;
+    border: none;
+  }
+
+  .basis-form__contacts {
+    flex-grow: 1;
+    order: 3;
+    border: none;
+  }
+
+  .basis-form__visited {
+    order: 4;
+    border: none;
+  }
+
+  .basis-form__emotions {
+    order: 5;
+    border: none;
+  }
 }
