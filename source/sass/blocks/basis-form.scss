@@ -169,7 +169,9 @@
   height: 46px;
   display: block;
   position: absolute;
-  background-image: url("../img/");
+  top: 10px;
+  left: 10px;
+  // background-image: url("../img/");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -195,6 +197,21 @@
   height: 377px;
   padding-bottom: 25px;
   border-top: 1px solid #000000;
+}
+
+.basis-form__checkbox {
+  padding-top: 52px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.visited__input {
+  width: 46px;
+  height: 46px;
+}
+
+.visited__label {
+  padding-left: 27px;
 }
 
 .basis-form__textarea {
