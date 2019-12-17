@@ -4,19 +4,19 @@
   padding-right: 24px;
   padding-bottom: 33px;
   padding-left: 27px;
+}
 
-  &__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.44;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.gallery__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  &__text {
-    line-height: 1.71;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-  }
+.gallery__text {
+  line-height: 1.71;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }

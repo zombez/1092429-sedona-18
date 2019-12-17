@@ -1,5 +1,5 @@
 .offers__elementary {
-  min-height: 440px;
+  // min-height: 471px;
   display: flex;
   flex-direction: column;
 }
@@ -32,8 +32,19 @@
   line-height: 1.5;
 }
 
-.offers__image {
-  flex-grow: 1;
+.offers__photo {
+  height: 260px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.offers__wrapper {
+  padding-top: 41px;
+  // padding-right: 41px;
+  // padding-bottom: 42px;
+  // padding-left: 69px;
 }
 
 .offers__list {
@@ -41,16 +52,41 @@
   list-style: none;
 }
 
+.offers__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__housing {
+  width: 37px;
+  height: 36px;
+  // margin-top: 26px;
+}
+
+.offers__souvenirs {
+  width: 32px;
+  height: 38px;
+}
+
+.offers__Food {
+  width: 40px;
+  height: 35px;
+}
+
 .offers__title {
+  margin-top: -25px;
+  padding-left: 50px;
   font-size: 18px;
   font-weight: 700;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   line-height: 1.44;
 }
 
 .offers__intro {
-  text-align: center;
+  margin-top: -15px;
+  padding-left: 50px;
+  // text-align: center;
   text-transform: uppercase;
   line-height: 1.5;
   color: #333333;
@@ -58,12 +94,23 @@
 
 @media (min-width: $tablet-width) {
   .offers__elementary {
-    min-height: 440px;
+    // min-height: 440px;
     flex-direction: row;
   }
 
   .offers__first {
     width: 256px;
+    height: 256px;
+    margin: 0 auto;
+  }
+
+  .offers__photo {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    flex-grow: 1;
   }
 
   .offers__list {
@@ -71,10 +118,54 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  .offers__item {
+    align-items: center;
+  }
+
+  .offers__item:nth-child(2) {
+    order: 3;
+  }
+
+  .offers__item:nth-child(3) {
+    order: 2;
+  }
+
+  .offers__housing {
+    width: 75px;
+    height: 72px;
+  }
+
+  .offers__souvenirs {
+    width: 77px;
+    height: 68px;
+  }
+
+  .offers__Food {
+    margin-bottom: -5px;
+    width: 64px;
+    height: 75px;
+  }
+
+  .offers__title {
+    margin-top: 32px;
+    margin-right: 50px;
+  }
+
+  .offers__intro {
+    padding-top: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .offers__first {
     width: 400px;
+  }
+
+  .offers__photo {
+    width: 800px;
+    background-image: url("../img/main-city-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
