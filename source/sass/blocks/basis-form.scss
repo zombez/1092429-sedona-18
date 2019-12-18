@@ -172,20 +172,16 @@
   width: 100%;
   margin-top: -40px;
   padding-left: 77px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.44;
-  text-align: left;
   display: block;
   position: relative;
 }
 
 label.impression__label:after {
-  display: block;
   content: "";
   width: 46px;
   height: 46px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
+  display: block;
   position: absolute;
   border-radius: 50%;
   top: -8px;
@@ -195,7 +191,7 @@ label.impression__label:after {
 }
 
 .impression__input:checked ~ label:after {
-  background: #000000;
+  background-color: #000000;
 }
 
 
@@ -203,9 +199,48 @@ label.impression__label:after {
 
 .basis-form__visited {
   margin-top: 32px;
-  // height: 408px;
-  // padding-bottom: 20px;
+  padding-bottom: 30px;
   border-top: 1px solid #000000;
+}
+
+.visited__title {
+  margin-bottom: -20px;
+}
+
+.basis-form__checkbox {
+  padding-top: 34px;
+  padding-left: 20px;
+}
+
+.visited__label {
+  width: 100%;
+  margin-top: -40px;
+  padding-left: 77px;
+  display: block;
+  position: relative;
+}
+
+label.visited__label:after {
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  display: block;
+  position: absolute;
+  border-radius: 10%;
+  top: -8px;
+  left: 0px;
+  // opacity: 0.5;
+  border: 14px solid #f2f2f2;
+}
+
+.visited__input {
+  width: 46px;
+  height: 46px;
+}
+
+.visited__input:checked ~ label:after {
+  background-image: url("../img/icon-tick.svg");
 }
 
 // пятый блок
@@ -217,21 +252,6 @@ label.impression__label:after {
   height: 377px;
   padding-bottom: 25px;
   border-top: 1px solid #000000;
-}
-
-.basis-form__checkbox {
-  // padding-top: 52px;
-  // padding-left: 25px;
-  // position: relative;
-}
-
-.visited__input {
-  width: 46px;
-  height: 46px;
-}
-
-.visited__label {
-  padding-left: 27px;
 }
 
 .basis-form__textarea {
@@ -298,4 +318,8 @@ label.impression__label:after {
     order: 5;
     border: none;
   }
+
+  // .basis-form__textarea {
+  //   width: 100%;
+  // }
 }
