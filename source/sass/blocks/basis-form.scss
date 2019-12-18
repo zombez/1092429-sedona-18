@@ -151,8 +151,13 @@
   border-top: 1px solid #000000;
 }
 
+.impression__title {
+  margin-bottom: -20px;
+}
+
 .basis-form__radio {
-  // padding-top: 52px;
+  padding-top: 32px;
+  padding-left: 20px;
   // padding-left: 25px;
   // position: relative;
 }
@@ -163,28 +168,43 @@
   // opacity: 0;
 }
 
-.impression__input::before {
+.impression__label {
+  width: 100%;
+  margin-top: -40px;
+  padding-left: 77px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: left;
+  display: block;
+  position: relative;
+}
+
+label.impression__label:after {
+  display: block;
   content: "";
   width: 46px;
   height: 46px;
-  display: block;
+  background: #f2f2f2;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  // background-image: url("../img/");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border-radius: 50%;
+  top: -8px;
+  left: 0px;
+  // opacity: 0.5;
+  border: 14px solid #f2f2f2;
 }
 
-.impression__label {
-  padding-left: 27px;
+.impression__input:checked ~ label:after {
+  background: #000000;
 }
+
 
 // четвертый блок
 
 .basis-form__visited {
+  margin-top: 32px;
   // height: 408px;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   border-top: 1px solid #000000;
 }
 
