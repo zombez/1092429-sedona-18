@@ -177,7 +177,7 @@
   position: relative;
 }
 
-label.impression__label:after {
+label.impression__label::after {
   content: "";
   width: 46px;
   height: 46px;
@@ -186,12 +186,12 @@ label.impression__label:after {
   position: absolute;
   border-radius: 50%;
   top: -8px;
-  left: 0px;
+  left: 0;
   // opacity: 0.5;
   border: 14px solid #f2f2f2;
 }
 
-.impression__input:checked ~ label:after {
+.impression__input:checked ~ label::after {
   background-color: #000000;
 }
 
@@ -221,7 +221,7 @@ label.impression__label:after {
   position: relative;
 }
 
-label.visited__label:after {
+label.visited__label::after {
   content: "";
   width: 46px;
   height: 46px;
@@ -230,7 +230,7 @@ label.visited__label:after {
   position: absolute;
   border-radius: 10%;
   top: -8px;
-  left: 0px;
+  left: 0;
   // opacity: 0.5;
   border: 14px solid #f2f2f2;
 }
@@ -240,7 +240,7 @@ label.visited__label:after {
   height: 46px;
 }
 
-.visited__input:checked ~ label:after {
+.visited__input:checked ~ label::after {
   background-image: url("../img/icon-tick.svg");
 }
 
