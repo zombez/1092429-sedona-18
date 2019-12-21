@@ -1,0 +1,11 @@
+.show-modal {
+  overflow: hidden;
+}
+
+.show-modal--success .modal--success {
+  display: flex;
+}
+
+.show-modal--error .modal--error {
+  display: flex;
+}

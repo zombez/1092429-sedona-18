@@ -91,8 +91,9 @@
   width: 222px;
   height: 58px;
   margin-top: 14px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  // margin-left: auto;
+  // margin-right: auto;
   padding-top: 15px;
   padding-left: 22px;
   display: block;
@@ -102,8 +103,8 @@
   width: 58px;
   height: 58px;
   margin-top: -58px;
-  margin-left: 313px;
-  // display: block;
+  margin-left: 221px;
+  display: block;
   position: relative;
   background-color: #e6e6e6;
 }
@@ -125,8 +126,8 @@
   width: 58px;
   height: 58px;
   margin-top: -58px;
-  margin-left: 313px;
-  // display: block;
+  margin-left: 221px;
+  display: block;
   position: relative;
   background-color: #e6e6e6;
 }
@@ -151,8 +152,13 @@
   border-top: 1px solid #000000;
 }
 
+.impression__title {
+  margin-bottom: -20px;
+}
+
 .basis-form__radio {
-  // padding-top: 52px;
+  padding-top: 32px;
+  padding-left: 20px;
   // padding-left: 25px;
   // position: relative;
 }
@@ -163,29 +169,79 @@
   // opacity: 0;
 }
 
-.impression__input::before {
+.impression__label {
+  width: 100%;
+  margin-top: -40px;
+  padding-left: 77px;
+  display: block;
+  position: relative;
+}
+
+label.impression__label:after {
   content: "";
   width: 46px;
   height: 46px;
+  background-color: #f2f2f2;
   display: block;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  // background-image: url("../img/");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border-radius: 50%;
+  top: -8px;
+  left: 0px;
+  // opacity: 0.5;
+  border: 14px solid #f2f2f2;
 }
 
-.impression__label {
-  padding-left: 27px;
+.impression__input:checked ~ label:after {
+  background-color: #000000;
 }
+
 
 // четвертый блок
 
 .basis-form__visited {
-  // height: 408px;
-  padding-bottom: 20px;
+  margin-top: 32px;
+  padding-bottom: 30px;
   border-top: 1px solid #000000;
+}
+
+.visited__title {
+  margin-bottom: -20px;
+}
+
+.basis-form__checkbox {
+  padding-top: 34px;
+  padding-left: 20px;
+}
+
+.visited__label {
+  width: 100%;
+  margin-top: -40px;
+  padding-left: 77px;
+  display: block;
+  position: relative;
+}
+
+label.visited__label:after {
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  display: block;
+  position: absolute;
+  border-radius: 10%;
+  top: -8px;
+  left: 0px;
+  // opacity: 0.5;
+  border: 14px solid #f2f2f2;
+}
+
+.visited__input {
+  width: 46px;
+  height: 46px;
+}
+
+.visited__input:checked ~ label:after {
+  background-image: url("../img/icon-tick.svg");
 }
 
 // пятый блок
@@ -197,21 +253,6 @@
   height: 377px;
   padding-bottom: 25px;
   border-top: 1px solid #000000;
-}
-
-.basis-form__checkbox {
-  // padding-top: 52px;
-  // padding-left: 25px;
-  // position: relative;
-}
-
-.visited__input {
-  width: 46px;
-  height: 46px;
-}
-
-.visited__label {
-  padding-left: 27px;
 }
 
 .basis-form__textarea {
@@ -252,30 +293,62 @@
     flex-wrap: wrap;
   }
 
-  .basis-form__impression {
-    padding-bottom: 20px;
-    order: 1;
-    border: none;
-  }
+  // первый блок
 
   .basis-form__yourself {
     order: 2;
     border: none;
   }
 
+  .yourself__title {
+    margin-bottom: 40px;
+  }
+
+  // второй блок
+
   .basis-form__contacts {
-    flex-grow: 1;
+    // flex-grow: 1;
     order: 3;
     border: none;
   }
 
+  .contacts__input {
+    width: 590px;
+  }
+
+  .contacts__phone,
+  .contacts__mail {
+    margin-left: 609px;
+  }
+
+  // третий блок
+
+  .basis-form__impression {
+    padding-bottom: 20px;
+    order: 1;
+    border: none;
+  }
+
+  .impression__title {
+    margin-bottom: 40px;
+  }
+
+  // четвертый блок
+
   .basis-form__visited {
+    padding-top: 30px;
     order: 4;
     border: none;
   }
+
+  // пятый блок
 
   .basis-form__emotions {
     order: 5;
     border: none;
   }
+
+  // .basis-form__textarea {
+  //   width: 100%;
+  // }
 }

@@ -7,14 +7,29 @@
 .offers__first {
   width: 100%;
   margin: 0 auto;
-  padding-top: 61px;
+  padding-top: 70px;
   padding-right: 27px;
   padding-bottom: 45px;
   padding-left: 28px;
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+.offers__first::after {
+  content: "";
+  height: 190px;
+  display: block;
+  position: absolute;
+  top: -145px;
+  right: 0;
+  left: 0;
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: contain;
 }
 
 
@@ -96,6 +111,10 @@
   .offers__elementary {
     // min-height: 440px;
     flex-direction: row;
+  }
+
+  .offers__first::after {
+    display: none;
   }
 
   .offers__first {
