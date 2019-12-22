@@ -1,3 +1,8 @@
+.basis-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .basis-form__title {
   font-size: 18px;
   font-weight: 700;
@@ -25,7 +30,7 @@
   font-weight: 700;
   line-height: 1.44;
   text-align: left;
-  color: #000000;
+  // color: #000000;
   opacity: 1;
 }
 
@@ -49,7 +54,6 @@
 // первый блок
 
 .basis-form__yourself {
-  // height: 340px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -65,8 +69,12 @@
   height: 58px;
   margin-top: 20px;
   margin-left: 13px;
-  padding-top: 15px;
+  // padding-top: 15px;
   padding-left: 22px;
+}
+
+.yourself__input::placeholder {
+  margin-left: 10px;
 }
 
 .yourself__input--first {
@@ -148,16 +156,16 @@
 // третий блок
 
 .basis-form__impression {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-top: 1px solid #000000;
 }
 
 .impression__title {
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 .basis-form__radio {
-  padding-top: 32px;
+  padding-top: 23px;
   padding-left: 20px;
   // padding-left: 25px;
   // position: relative;
@@ -289,25 +297,28 @@ label.visited__label::after {
 
 @media (min-width: $tablet-width) {
   .basis-form {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   // первый блок
 
   .basis-form__yourself {
+    margin-left: 50px;
+    flex-grow: 1;
     order: 2;
-    border: none;
+    border-top: none;
+    border-left: 1px solid #000000;
   }
 
   .yourself__title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   // второй блок
 
   .basis-form__contacts {
-    // flex-grow: 1;
+    flex-grow: 1;
     order: 3;
     border: none;
   }
@@ -323,20 +334,27 @@ label.visited__label::after {
 
   // третий блок
 
+  .basis-form__radio {
+    // margin-top: 32px;
+    padding-top: 42px;
+  }
+
   .basis-form__impression {
     padding-bottom: 20px;
+    flex-grow: 1;
     order: 1;
     border: none;
   }
 
   .impression__title {
-    margin-bottom: 40px;
+    margin-bottom: 6px;
   }
 
   // четвертый блок
 
   .basis-form__visited {
     padding-top: 30px;
+    flex-grow: 1;
     order: 4;
     border: none;
   }
@@ -344,6 +362,7 @@ label.visited__label::after {
   // пятый блок
 
   .basis-form__emotions {
+    flex-grow: 1;
     order: 5;
     border: none;
   }
