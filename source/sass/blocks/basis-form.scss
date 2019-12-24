@@ -304,9 +304,19 @@ label.visited__label::after {
   .basis-form__yourself {
     margin-left: 50px;
     flex-grow: 1;
+    position: relative;
     order: 2;
-    border-top: none;
-    border-left: 1px solid #000000;
+    border: none;
+  }
+
+  .basis-form__yourself::before {
+    content: "";
+    height: 275px;
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    border: 1px solid #000000;
   }
 
   .yourself__title {
@@ -346,6 +356,27 @@ label.visited__label::after {
 
   .impression__title {
     margin-bottom: 6px;
+    position: relative;
+  }
+
+  .impression__title::before {
+    content: "";
+    width: 170px;
+    display: block;
+    position: absolute;
+    top: 330px;
+    left: 20px;
+    border: 1px solid #000000;
+  }
+
+  .impression__title::after {
+    content: "";
+    width: 170px;
+    display: block;
+    position: absolute;
+    top: 330px;
+    left: 510px;
+    border: 1px solid #000000;
   }
 
   // четвертый блок
