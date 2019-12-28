@@ -49,6 +49,7 @@
   font-weight: 700;
   line-height: 1.44;
   text-align: left;
+  position: relative;
 }
 
 // первый блок
@@ -86,7 +87,8 @@
 
 .basis-form__contacts {
   // height: 286px;
-  padding-bottom: 20px;
+  padding: 30px;
+  // padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #000000;
@@ -97,22 +99,22 @@
 }
 
 .contacts__input {
-  width: 222px;
+  width: 100%;
   height: 58px;
   margin-top: 14px;
-  margin-left: 20px;
   padding-top: 15px;
   padding-left: 22px;
   display: block;
 }
 
-.contacts__phone {
+.contacts__phone,
+.contacts__mail {
   width: 58px;
   height: 58px;
-  margin-top: -58px;
-  margin-left: 221px;
   display: block;
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   background-color: #e6e6e6;
 }
 
@@ -127,16 +129,6 @@
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.contacts__mail {
-  width: 58px;
-  height: 58px;
-  margin-top: -58px;
-  margin-left: 221px;
-  display: block;
-  position: relative;
-  background-color: #e6e6e6;
 }
 
 .contacts__mail::before {
@@ -205,16 +197,19 @@
 // четвертый блок
 
 .basis-form__visited {
+  width: 100%;
   margin-top: 32px;
   padding-bottom: 30px;
   border-top: 1px solid #000000;
 }
 
 .visited__title {
+  width: 100%;
   margin-bottom: -20px;
 }
 
 .basis-form__checkbox {
+  // width: 50%;
   padding-top: 34px;
   padding-left: 20px;
 }
@@ -332,12 +327,7 @@ label.visited__label::after {
   }
 
   .contacts__input {
-    width: 590px;
-  }
-
-  .contacts__phone,
-  .contacts__mail {
-    margin-left: 609px;
+    width: 100%;
   }
 
   // третий блок
@@ -359,33 +349,19 @@ label.visited__label::after {
     position: relative;
   }
 
-  // .impression__title::before {
-  //   content: "";
-  //   width: 170px;
-  //   display: block;
-  //   position: absolute;
-  //   top: 330px;
-  //   left: 20px;
-  //   border: 1px solid #000000;
-  // }
-
-  // .impression__title::after {
-  //   content: "";
-  //   width: 170px;
-  //   display: block;
-  //   position: absolute;
-  //   top: 330px;
-  //   left: 510px;
-  //   border: 1px solid #000000;
-  // }
-
   // четвертый блок
 
   .basis-form__visited {
     padding-top: 30px;
-    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-grow: 1;
     order: 4;
     border: none;
+  }
+
+  .basis-form__checkbox {
+    width: 50%;
   }
 
   // пятый блок
