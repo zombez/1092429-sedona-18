@@ -42,11 +42,12 @@
 }
 
 .slider__button {
+  padding: 0;
   width: 11px;
   height: 10px;
   display: block;
   position: absolute;
-  top: 16px;
+  top: 18px;
   left: 45px;
   z-index: 10;
   border-radius: 50%;
@@ -115,7 +116,7 @@
   }
 
   .slider__button {
-    top: 40px;
+    top: 43px;
     left: 170px;
   }
 
