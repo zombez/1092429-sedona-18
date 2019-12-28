@@ -86,9 +86,7 @@
 // второй блок
 
 .basis-form__contacts {
-  // height: 286px;
   padding: 30px;
-  // padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #000000;
@@ -326,6 +324,28 @@ label.visited__label::after {
     border: none;
   }
 
+  .contacts__title {
+    position: relative;
+  }
+
+  .contacts__title::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #000000;
+  }
+
+  .contacts__span {
+    padding: 0 80px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
   .contacts__input {
     width: 100%;
   }
@@ -349,6 +369,7 @@ label.visited__label::after {
     position: relative;
   }
 
+
   // четвертый блок
 
   .basis-form__visited {
@@ -358,6 +379,28 @@ label.visited__label::after {
     // flex-grow: 1;
     order: 4;
     border: none;
+  }
+
+  .visited__title {
+    position: relative;
+  }
+
+  .visited__title::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #000000;
+  }
+
+  .visited__span {
+    padding: 0 80px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
   .basis-form__checkbox {
@@ -370,6 +413,28 @@ label.visited__label::after {
     flex-grow: 1;
     order: 5;
     border: none;
+  }
+
+  .emotions__title {
+    position: relative;
+  }
+
+  .emotions__title::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #000000;
+  }
+
+  .emotions__span {
+    padding: 0 80px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
   // .basis-form__textarea {
