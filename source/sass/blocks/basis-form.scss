@@ -55,10 +55,11 @@
 // первый блок
 
 .basis-form__yourself {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #000000;
+  background-color: red;
 }
 
 .yourself__text {
@@ -86,10 +87,11 @@
 // второй блок
 
 .basis-form__contacts {
-  padding: 30px;
+  padding-bottom: 28px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #000000;
+  background-color: skyblue;
 }
 
 .contacts__text {
@@ -145,8 +147,9 @@
 // третий блок
 
 .basis-form__impression {
-  padding-bottom: 10px;
+  padding-bottom: 32px;
   border-top: 1px solid #000000;
+  background-color: teal;
 }
 
 .impression__title {
@@ -182,6 +185,18 @@
   border: 14px solid #f2f2f2;
 }
 
+.impression__label:hover::after {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.impression__label:active::after {
+  border-color: #808080;
+  background-color: #808080;
+  opacity: 0.3;
+}
+
+
 .impression__input {
   width: 46px;
   height: 46px;
@@ -196,9 +211,10 @@
 
 .basis-form__visited {
   width: 100%;
-  margin-top: 32px;
+  // margin-top: 32px;
   padding-bottom: 30px;
   border-top: 1px solid #000000;
+  background-color: wheat;
 }
 
 .visited__title {
@@ -220,7 +236,7 @@
   position: relative;
 }
 
-label.visited__label::after {
+.visited__label::after {
   content: "";
   width: 46px;
   height: 46px;
@@ -234,9 +250,21 @@ label.visited__label::after {
   border: 14px solid #f2f2f2;
 }
 
+.visited__label:hover::after {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.visited__label:active::after {
+  border-color: #808080;
+  background-color: #808080;
+  opacity: 0.3;
+}
+
 .visited__input {
   width: 46px;
   height: 46px;
+  opacity: 0;
 }
 
 .visited__input:checked ~ label::after {
@@ -246,12 +274,12 @@ label.visited__label::after {
 // пятый блок
 
 .basis-form__emotions {
+  padding-bottom: 47px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 377px;
-  padding-bottom: 25px;
   border-top: 1px solid #000000;
+  background-color: yellowgreen;
 }
 
 .basis-form__textarea {
@@ -295,7 +323,7 @@ label.visited__label::after {
   // первый блок
 
   .basis-form__yourself {
-    margin-left: 50px;
+    // margin-left: 50px;
     flex-grow: 1;
     position: relative;
     order: 2;
