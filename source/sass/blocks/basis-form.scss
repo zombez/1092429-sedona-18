@@ -67,7 +67,8 @@
 }
 
 .yourself__input {
-  width: 192px;
+  width: 50%;
+  // max-width: 192px;
   height: 58px;
   margin-top: 20px;
   margin-left: 13px;
@@ -76,12 +77,13 @@
   padding-left: 22px;
 }
 
-.yourself__input::placeholder {
-  margin-left: 10px;
+.yourself__input--first {
+  width: 60%;
+  // max-width: 230px;
 }
 
-.yourself__input--first {
-  width: 230px;
+.yourself__input::placeholder {
+  margin-left: 10px;
 }
 
 // второй блок
@@ -465,8 +467,11 @@
     background-color: #ffffff;
     z-index: 1;
   }
+}
 
-  // .basis-form__textarea {
-  //   width: 100%;
-  // }
+@media (min-width: $desktop-width) {
+  // четвертый блок
+  .basis-form__checkbox {
+    width: 25%;
+  }
 }
