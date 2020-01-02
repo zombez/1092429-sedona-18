@@ -90,7 +90,7 @@ gulp.task("build", gulp.series(
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "build/"
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
